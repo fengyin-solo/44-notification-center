@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>通知推送中心</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>通知推送中心</h1>
+    <span class="subtitle">消息推送 / 订阅 / 定时发送 / 发送记录追踪</span>
+  </header>
+
+  <main>
+    <section class="stats-grid" id="stats"></section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>消息列表</h2>
+        <button id="refresh-btn" class="btn">刷新</button>
+      </div>
+      <table id="message-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>标题</th>
+            <th>渠道</th>
+            <th>优先级</th>
+            <th>状态</th>
+            <th>创建时间</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>渠道列表</h2>
+      </div>
+      <table id="channel-table">
+        <thead>
+          <tr>
+            <th>名称</th>
+            <th>类型</th>
+            <th>状态</th>
+            <th>优先级</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
